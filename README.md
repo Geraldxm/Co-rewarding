@@ -50,6 +50,7 @@ cd Co-rewarding-I
 bash run_corewarding-I.sh
 
 # Co-rewarding-II
+cd Co-rewarding-II
 bash run_corewarding-II.sh
 ```
 
