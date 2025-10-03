@@ -1,6 +1,16 @@
 
 <h1 align="center"><b>Co-rewarding: Stable Self-supervised RL for Eliciting Reasoning in Large Language Models</b></h1>
 
+<p align="center">
+  <a href="paper/Co-rewarding.pdf">
+    <img alt="Paper" src="https://img.shields.io/badge/Paper-Read-blue?logo=readthedocs&logoColor=white">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/resistzzz/Co-rewarding/stargazers">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/resistzzz/Co-rewarding?style=social">
+  </a>
+</p>
+
 ![Co-rewarding Framework](figs/Method.png)
 
 **Co-rewarding** is a novel self-supervised RL framework that improves training stability by seeking complementary supervision from another views. Specifically, we instantiate Co-rewarding in two ways: (1) **Co-rewarding-I** is a data-side instantiation that derives reward signals from contrastive agreement across semantically analogous questions; and (2) **Co-rewarding-II** is a model-side instantiation that maintains a slowly-updated reference teacher with pseudo labels to realize self-distillation. Intuitively, such instantiations introduce different levels of discrepancy to increase the difficulty of training collapse on trivial reasoning solutions.
@@ -205,4 +215,5 @@ We release all checkpoints trained by us, including our Co-rewarding-I, Co-rewar
 | TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base-OpenRS | 8B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base-OpenRS) |
 
 
-
+## Citation
+If you use our datasets or models, please cite our paper!
