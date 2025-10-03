@@ -3,19 +3,19 @@ export PYTHONUTF8=1
 NUM_GPUS=$(echo $CUDA_VISIBLE_DEVICES | awk -F',' '{print NF}')
 
 set -x
-export WANDB_API_KEY="c229c38fb3de165b043676604e8bac88ad011777"
+export WANDB_API_KEY="Your Wandb Key"
 export WANDB_MODE=offline
 export ACCELERATE_LOG_LEVEL=info
 export HYDRA_FULL_ERROR=1
-LLM_PATH="../../LLMs/Qwen3-1.7B-Base"
+LLM_PATH="Your LLM Path"
 
 PROJ_NAME="DAPO_Dataset"
 alpha_start=0.01
 alpha_end=1e-5
 interval=1
 total_epochs=3
-EXP_NAME="xxxx"
-train_files=data/math/train.parquet
+EXP_NAME="Your Exp Name"
+train_files=data/dapo/train.parquet
 lr=3e-6
 
 PYTHONUNBUFFERED=1 python3 -m verl.trainer.main_ppo \
