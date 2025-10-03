@@ -101,13 +101,13 @@ python rewrite_questions.py \
 
 We release our rephrased dataset:
 - Rephrased MATH training set: [TMLR-Group-HF/Co-rewarding-RephrasedMATH](https://huggingface.co/datasets/TMLR-Group-HF/Co-rewarding-RephrasedMATH).
-- Rephrased DAPO-14k training set: [To be updated]
-- Rephrased OpenRS training set: [To be updated]
+- Rephrased DAPO-14k training set: [TMLR-Group-HF/Co-rewarding-RephrasedDAPO-14k](https://huggingface.co/datasets/TMLR-Group-HF/Co-rewarding-RephrasedDAPO-14k)
+- Rephrased OpenRS training set: [TMLR-Group-HF/Co-rewarding-RephrasedOpenRS](https://huggingface.co/datasets/TMLR-Group-HF/Co-rewarding-RephrasedOpenRS)
 
 
 ### Checkpoints
 
-We release all checkpoints trained by us, including our Co-rewarding-I, Co-rewarding-II and baselines.
+We release all checkpoints trained by us, including our Co-rewarding-I, Co-rewarding-II and all Baselines.
 
 #### Trained on MATH
 | Model Name | Model Size | Method | Hugging Face Link |
@@ -119,44 +119,90 @@ We release all checkpoints trained by us, including our Co-rewarding-I, Co-rewar
 | TMLR-Group-HF/Co-rewarding-I-Qwen3-8B-Base-MATH | 8B | Co-rewarding-I | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-I-Qwen3-8B-Base-MATH) |
 | TMLR-Group-HF/Co-rewarding-I-Llama-3.2-3B-Instruct-MATH | 3B | Co-rewarding-I | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-I-Llama-3.2-3B-Instruct-MATH) |
 | --- | --- | --- | --- |
-| TMLR-Group-HF/Co-rewarding-II-Qwen3-4B-Base-MATH | 4B | Co-rewarding-I | [To be updated] |
-| TMLR-Group-HF/Co-rewarding-II-Qwen3-8B-Base-MATH | 8B | Co-rewarding-I | [To be updated] |
-| TMLR-Group-HF/Co-rewarding-II-Llama-3.2-3B-Instruct-MATH | 3B | Co-rewarding-I | [To be updated] |
+| TMLR-Group-HF/Co-rewarding-II-Qwen2.5-3B-MATH | 3B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Qwen2.5-3B-MATH) |
+| TMLR-Group-HF/Co-rewarding-II-Qwen2.5-7B-MATH | 7B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Qwen2.5-7B-MATH) |
+| TMLR-Group-HF/Co-rewarding-II-Qwen3-1.7B-Base-MATH | 1.7B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Qwen3-1.7B-Base-MATH) |
+| TMLR-Group-HF/Co-rewarding-II-Qwen3-4B-Base-MATH | 4B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Qwen3-4B-Base-MATH) |
+| TMLR-Group-HF/Co-rewarding-II-Qwen3-8B-Base-MATH | 8B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Qwen3-8B-Base-MATH) |
+| TMLR-Group-HF/Co-rewarding-II-Llama-3.2-3B-Instruct-MATH | 3B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Llama-3.2-3B-Instruct-MATH) |
 | --- | --- | --- | --- |
-| TMLR-Group-HF/GT-Qwen2.5-3B | 3B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen2.5-3B) |
-| TMLR-Group-HF/GT-Qwen2.5-7B | 7B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen2.5-7B) |
-| TMLR-Group-HF/GT-Qwen3-1.7B-Base | 1.7B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-1.7B-Base) |
-| TMLR-Group-HF/GT-Qwen3-4B-Base | 4B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-4B-Base) |
-| TMLR-Group-HF/GT-Qwen3-8B-Base | 8B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-8B-Base) |
-| TMLR-Group-HF/GT-Llama-3.2-3B-Instruct | 3B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Llama-3.2-3B-Instruct) |
+| TMLR-Group-HF/GT-Qwen2.5-3B-MATH | 3B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen2.5-3B-MATH) |
+| TMLR-Group-HF/GT-Qwen2.5-7B-MATH | 7B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen2.5-7B-MATH) |
+| TMLR-Group-HF/GT-Qwen3-1.7B-Base-MATH | 1.7B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-1.7B-Base-MATH) |
+| TMLR-Group-HF/GT-Qwen3-4B-Base-MATH | 4B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-4B-Base-MATH) |
+| TMLR-Group-HF/GT-Qwen3-8B-Base-MATH | 8B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-8B-Base-MATH) |
+| TMLR-Group-HF/GT-Llama-3.2-3B-Instruct-MATH | 3B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Llama-3.2-3B-Instruct-MATH) |
 | --- | --- | --- | --- |
-| TMLR-Group-HF/Self-Certainty-Qwen2.5-3B | 3B | Self-Certainty | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen2.5-3B) |
-| TMLR-Group-HF/Self-Certainty-Qwen2.5-7B | 7B | Self-Certainty | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen2.5-7B) |
-| TMLR-Group-HF/Self-Certainty-Qwen3-1.7B-Base | 1.7B | Self-Certainty | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-1.7B-Base) |
-| TMLR-Group-HF/Self-Certainty-Qwen3-4B-Base | 4B | Self-Certainty | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-4B-Base) |
-| TMLR-Group-HF/Self-Certainty-Qwen3-8B-Base | 8B | Self-Certainty | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-8B-Base) |
-| TMLR-Group-HF/Self-Certainty-Llama-3.2-3B-Instruct | 3B | Self-Certainty | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Llama-3.2-3B-Instruct) |
+| TMLR-Group-HF/Self-Certainty-Qwen2.5-3B-MATH | 3B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen2.5-3B-MATH) |
+| TMLR-Group-HF/Self-Certainty-Qwen2.5-7B-MATH | 7B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen2.5-7B-MATH) |
+| TMLR-Group-HF/Self-Certainty-Qwen3-1.7B-Base-MATH | 1.7B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-1.7B-Base-MATH) |
+| TMLR-Group-HF/Self-Certainty-Qwen3-4B-Base-MATH | 4B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-4B-Base-MATH) |
+| TMLR-Group-HF/Self-Certainty-Qwen3-8B-Base-MATH | 8B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-8B-Base-MATH) |
+| TMLR-Group-HF/Self-Certainty-Llama-3.2-3B-Instruct-MATH | 3B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Llama-3.2-3B-Instruct-MATH) |
 | --- | --- | --- | --- |
-| TMLR-Group-HF/Entropy-Qwen2.5-3B | 3B | Entropy | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen2.5-3B) |
-| TMLR-Group-HF/Entropy-Qwen2.5-7B | 7B | Entropy | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen2.5-7B) |
-| TMLR-Group-HF/Entropy-Qwen3-1.7B-Base | 1.7B | Entropy | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-1.7B-Base) |
-| TMLR-Group-HF/Entropy-Qwen3-4B-Base | 4B | Entropy | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-4B-Base) |
-| TMLR-Group-HF/Entropy-Qwen3-8B-Base | 8B | Entropy | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-8B-Base) |
-| TMLR-Group-HF/Entropy-Llama-3.2-3B-Instruct | 3B | Entropy | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Llama-3.2-3B-Instruct) |
+| TMLR-Group-HF/Entropy-Qwen2.5-3B-MATH | 3B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen2.5-3B-MATH) |
+| TMLR-Group-HF/Entropy-Qwen2.5-7B-MATH | 7B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen2.5-7B-MATH) |
+| TMLR-Group-HF/Entropy-Qwen3-1.7B-Base-MATH | 1.7B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-1.7B-Base-MATH) |
+| TMLR-Group-HF/Entropy-Qwen3-4B-Base-MATH | 4B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-4B-Base-MATH) |
+| TMLR-Group-HF/Entropy-Qwen3-8B-Base-MATH | 8B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-8B-Base-MATH) |
+| TMLR-Group-HF/Entropy-Llama-3.2-3B-Instruct-MATH | 3B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Llama-3.2-3B-Instruct-MATH) |
 | --- | --- | --- | --- |
-| TMLR-Group-HF/Majority-Voting-Qwen2.5-3B | 3B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen2.5-3B) |
-| TMLR-Group-HF/Majority-Voting-Qwen2.5-7B | 7B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen2.5-7B) |
-| TMLR-Group-HF/Majority-Voting-Qwen3-1.7B-Base | 1.7B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-1.7B-Base) |
-| TMLR-Group-HF/Majority-Voting-Qwen3-4B-Base | 4B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-4B-Base) |
-| TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base | 8B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base) |
-| TMLR-Group-HF/Majority-Voting-Llama-3.2-3B-Instruct | 3B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Llama-3.2-3B-Instruct) |
+| TMLR-Group-HF/Majority-Voting-Qwen2.5-3B-MATH | 3B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen2.5-3B-MATH) |
+| TMLR-Group-HF/Majority-Voting-Qwen2.5-7B-MATH | 7B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen2.5-7B-MATH) |
+| TMLR-Group-HF/Majority-Voting-Qwen3-1.7B-Base-MATH | 1.7B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-1.7B-Base-MATH) |
+| TMLR-Group-HF/Majority-Voting-Qwen3-4B-Base-MATH | 4B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-4B-Base-MATH) |
+| TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base-MATH | 8B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base-MATH) |
+| TMLR-Group-HF/Majority-Voting-Llama-3.2-3B-Instruct-MATH | 3B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Llama-3.2-3B-Instruct-MATH) |
 
 
+#### Trained on DAPO-14k
+| Model Name | Model Size | Method | Hugging Face Link |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Co-rewarding-I-Qwen3-4B-Base-DAPO14k | 4B | Co-rewarding-I | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-I-Qwen3-4B-Base-DAPO14k) |
+| TMLR-Group-HF/Co-rewarding-I-Qwen3-8B-Base-DAPO14k | 8B | Co-rewarding-I | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-I-Qwen3-8B-Base-DAPO14k) |
+| TMLR-Group-HF/Co-rewarding-I-Llama-3.2-3B-Instruct-DAPO14k | 3B | Co-rewarding-I | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-I-Llama-3.2-3B-Instruct-DAPO14k) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Co-rewarding-II-Qwen3-4B-Base-DAPO14k | 4B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Qwen3-4B-Base-DAPO14k) |
+| TMLR-Group-HF/Co-rewarding-II-Qwen3-8B-Base-DAPO14k | 8B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Qwen3-8B-Base-DAPO14k) |
+| TMLR-Group-HF/Co-rewarding-II-Llama-3.2-3B-Instruct-DAPO14k | 3B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Llama-3.2-3B-Instruct-DAPO14k) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/GT-Qwen3-4B-Base-DAPO14k | 4B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-4B-Base-DAPO14k) |
+| TMLR-Group-HF/GT-Qwen3-8B-Base-DAPO14k | 8B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-8B-Base-DAPO14k) |
+| TMLR-Group-HF/GT-Llama-3.2-3B-Instruct-DAPO14k | 3B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Llama-3.2-3B-Instruct-DAPO14k) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Self-Certainty-Qwen3-4B-Base-DAPO14k | 4B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-4B-Base-DAPO14k) |
+| TMLR-Group-HF/Self-Certainty-Qwen3-8B-Base-DAPO14k | 8B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-8B-Base-DAPO14k) |
+| TMLR-Group-HF/Self-Certainty-Llama-3.2-3B-Instruct-DAPO14k | 3B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Llama-3.2-3B-Instruct-DAPO14k) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Entropy-Qwen3-4B-Base-DAPO14k | 4B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-4B-Base-DAPO14k) |
+| TMLR-Group-HF/Entropy-Qwen3-8B-Base-DAPO14k | 8B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-8B-Base-DAPO14k) |
+| TMLR-Group-HF/Entropy-Llama-3.2-3B-Instruct-DAPO14k | 3B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Llama-3.2-3B-Instruct-DAPO14k) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Majority-Voting-Qwen3-4B-Base-DAPO14k | 4B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-4B-Base-DAPO14k) |
+| TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base-DAPO14k | 8B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base-DAPO14k) |
+| TMLR-Group-HF/Majority-Voting-Llama-3.2-3B-Instruct-DAPO14k | 3B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Llama-3.2-3B-Instruct-DAPO14k) |
 
 
-
-
-
+#### Trained on OpenRS
+| Model Name | Model Size | Method | Hugging Face Link |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Co-rewarding-I-Qwen3-4B-Base-OpenRS | 4B | Co-rewarding-I | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-I-Qwen3-4B-Base-OpenRS) |
+| TMLR-Group-HF/Co-rewarding-I-Qwen3-8B-Base-OpenRS | 8B | Co-rewarding-I | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-I-Qwen3-8B-Base-OpenRS) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Co-rewarding-II-Qwen3-4B-Base-OpenRS | 4B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Qwen3-4B-Base-OpenRS) |
+| TMLR-Group-HF/Co-rewarding-II-Qwen3-8B-Base-OpenRS | 8B | Co-rewarding-II | [View Model](https://huggingface.co/TMLR-Group-HF/Co-rewarding-II-Qwen3-8B-Base-OpenRS) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/GT-Qwen3-4B-Base-OpenRS | 4B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-4B-Base-OpenRS) |
+| TMLR-Group-HF/GT-Qwen3-8B-Base-OpenRS | 8B | GT-GRPO | [View Model](https://huggingface.co/TMLR-Group-HF/GT-Qwen3-8B-Base-OpenRS) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Self-Certainty-Qwen3-4B-Base-OpenRS | 4B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-4B-Base-OpenRS) |
+| TMLR-Group-HF/Self-Certainty-Qwen3-8B-Base-OpenRS | 8B | Self-Certainty Maximization | [View Model](https://huggingface.co/TMLR-Group-HF/Self-Certainty-Qwen3-8B-Base-OpenRS) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Entropy-Qwen3-4B-Base-OpenRS | 4B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-4B-Base-OpenRS) |
+| TMLR-Group-HF/Entropy-Qwen3-8B-Base-OpenRS | 8B | Entropy Minimization | [View Model](https://huggingface.co/TMLR-Group-HF/Entropy-Qwen3-8B-Base-OpenRS) |
+| --- | --- | --- | --- |
+| TMLR-Group-HF/Majority-Voting-Qwen3-4B-Base-OpenRS | 4B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-4B-Base-OpenRS) |
+| TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base-OpenRS | 8B | Majority-Voting | [View Model](https://huggingface.co/TMLR-Group-HF/Majority-Voting-Qwen3-8B-Base-OpenRS) |
 
 
 

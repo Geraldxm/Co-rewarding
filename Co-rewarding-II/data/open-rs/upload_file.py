@@ -9,9 +9,9 @@ import pandas as pd
 from pathlib import Path
 
 # === 配置区 ===
-ORIGINAL_FILE = "data/dapo/train_original.parquet"
-REWRITE_FILE  = "data/dapo/train_rewrite_Qwen3-32B.parquet"
-OUTPUT_FILE   = "data/dapo/train_pairs.parquet"
+ORIGINAL_FILE = "data/open-rs/train_original.parquet"
+REWRITE_FILE  = "data/open-rs/train_rewrite_Qwen3-32B.parquet"
+OUTPUT_FILE   = "data/open-rs/train_pairs.parquet"
 
 
 def make_pairs() -> None:
