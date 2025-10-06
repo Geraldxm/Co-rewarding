@@ -1,5 +1,5 @@
 
-<h1 align="center"><b>Co-rewarding: Stable Self-supervised RL for Eliciting Reasoning in Large Language Models</b></h1>
+<h1 align="center"><b>[arXiv:2508.00410] "Co-rewarding: Stable Self-supervised RL for Eliciting Reasoning in Large Language Models"</b></h1>
 
 <p align="center">
   <a href="https://arxiv.org/pdf/2508.00410">
