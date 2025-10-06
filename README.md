@@ -2,14 +2,19 @@
 <h1 align="center"><b>Co-rewarding: Stable Self-supervised RL for Eliciting Reasoning in Large Language Models</b></h1>
 
 <p align="center">
+  <a href="https://arxiv.org/pdf/2508.00410">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2508.00410-b31b1b?logo=arxiv&logoColor=white" height="20">
+  </a>
+  &nbsp;&nbsp;
   <a href="paper/Co-rewarding.pdf">
-    <img alt="Paper" src="https://img.shields.io/badge/Paper-Read-blue?logo=readthedocs&logoColor=white">
+    <img alt="Paper" src="https://img.shields.io/badge/Paper-Read-blue?logo=readthedocs&logoColor=white" height="20">
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/resistzzz/Co-rewarding/stargazers">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/resistzzz/Co-rewarding?style=social">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/resistzzz/Co-rewarding?style=social" height="20">
   </a>
 </p>
+
 
 ![Co-rewarding Framework](figs/Method.png)
 
@@ -218,3 +223,11 @@ We release all checkpoints trained by us, including our Co-rewarding-I, Co-rewar
 
 ## Citation
 If you use our datasets or models, please cite our paper!
+```
+@article{zhang2025co,
+  title={Co-rewarding: Stable Self-supervised RL for Eliciting Reasoning in Large Language Models},
+  author={Zhang, Zizhuo and Zhu, Jianing and Ge, Xinmu and Zhao, Zihua and Zhou, Zhanke and Li, Xuan and Feng, Xiao and Yao, Jiangchao and Han, Bo},
+  journal={arXiv preprint arXiv:2508.00410},
+  year={2025}
+}
+```
